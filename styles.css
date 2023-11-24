@@ -11,6 +11,26 @@ h1{
     margin-bottom: 10px;
     font-size: 3rem;
 }
+h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+p{
+    color: #777;
+    line-height: 1.5rem;
+}
+p a{
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+}
+div.shadow-text{
+    color: #000;
+    opacity: 0.05;
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -47,11 +67,13 @@ header nav{
 }
 div.intro{
     padding: 80px 0;
+    min-height: 500px;
 }
 div.two-columns{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    align-items: center;
 }
 div.intro img{
     position: absolute;
@@ -86,4 +108,18 @@ div.vertical-line::after{
 }
 div.intro > div.two-columns > div:first-child{
     position: relative;
+}
+div.horizontal-line{
+    color: #888;
+    font-size: 0.7rem;
+    margin-bottom: 30px;
+}
+div.horizontal-line::before{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background-color: #aaa;
+    margin-bottom: 2px;
+    margin-right: 5px;
 }
