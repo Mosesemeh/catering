@@ -123,3 +123,51 @@ div.horizontal-line::before{
     margin-bottom: 2px;
     margin-right: 5px;
 }
+div.testimonials-box{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    margin: 50px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    position: relative;
+}
+div.testimonials-box > h3{
+    position: absolute;
+    top: -20px;
+    font-size: 2rem;
+}
+div.testimonial-content{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px; 
+}
+div.testimonial-content img{
+    border-radius: 50%;
+    height: 100%;
+    width: 140%;
+}
+.profile-image{
+    position: relative;
+    left: 10px;
+}
+.profile-image .circle{
+    height: 210px;
+    width: 210px;
+    position: absolute;
+    top: -16px;
+    left: -10px;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: green;
+}
+.testimonials-columns{
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    gap: 40px;
+} 
+.testimonial-contents{
+    height: 280px;
+    overflow-y: scroll;
+}
+.testimonial-content{ 
+    margin: 50px 0;
+}
