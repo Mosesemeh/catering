@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&family=Oswald&display=swap');
+:root{
+    --green:#37784E;
+}
 *{
     padding: 0;
     margin: 0;
@@ -125,11 +128,13 @@ div.horizontal-line::before{
 }
 div.testimonials-box{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-    margin: 50px;
+    margin: 150px 20px 0;
     padding: 50px 30px;
     border-radius: 20px;
     position: relative;
-}
+    z-index: 1;
+    background-color: #fff;
+} 
 div.testimonials-box > h3{
     position: absolute;
     top: -20px;
@@ -157,7 +162,7 @@ div.testimonial-content img{
     left: -10px;
     z-index: -1;
     border-radius: 50%;
-    background-color: green;
+    background-color: var(--green);
 }
 .testimonials-columns{
     display: grid;
@@ -167,7 +172,37 @@ div.testimonial-content img{
 .testimonial-contents{
     height: 280px;
     overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 .testimonial-content{ 
-    margin: 50px 0;
+    padding: 50px 0;
+    scroll-snap-align: start;
+}
+.testimonial-link a img{
+    display: block;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+div.stars{
+    color: #ACC6B6;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+div.stars div.filled{
+    display: inline-block;
+    color: var(--green);
+}
+div.testimonial-content {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+div.testimonials div.shadow-text{
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+}
+div.testimonials{
+    position: relative;
 }
