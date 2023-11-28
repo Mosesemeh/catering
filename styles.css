@@ -34,6 +34,11 @@ div.shadow-text{
     font-weight: bold;
     letter-spacing: 2px;
 }
+@media screen and (max-width: 700px){
+    div.shadow-text{
+        font-size: 4rem;
+    }
+}
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -57,7 +62,7 @@ header a{
     font-weight: bold;   
 }
 header a.logo{
-    color: #37784E;
+    color: #1b7e3d;
     padding-left: 0;
 }
 header nav{
@@ -90,6 +95,17 @@ div.intro img{
     border-bottom-right-radius: 900px;
     transform: rotate(-170deg);
 }
+@media screen and (max-width: 700px) {
+    div.two-columns{
+        padding: 20px;
+    }
+    div.intro img{
+        width: 600px;
+        height: 800px;
+        right: -210px;
+        transform: rotate(-190deg);
+    }
+}
 div.vertical-line{
     transform: rotate(-90deg);
     display: inline-block;
@@ -112,11 +128,26 @@ div.vertical-line::after{
 div.intro > div.two-columns > div:first-child{
     position: relative;
 }
+@media screen and (max-width: 700px){
+    .two-columns.phn{
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow-x: hidden;
+    }
+    .two-columns.phn:last-child p{
+        font-size: 0.7rem;
+    }
+    .two-columns.phn:last-child h2{
+        font-size: 1.4rem;
+        padding-bottom: 0;
+    }
+}
 div.horizontal-line{
     color: #888;
     font-size: 0.7rem;
     margin-bottom: 30px;
 }
+
 div.horizontal-line::before{
     content: '';
     display: inline-block;
@@ -150,6 +181,7 @@ div.testimonial-content img{
     height: 100%;
     width: 140%;
 }
+
 .profile-image{
     position: relative;
     left: 10px;
@@ -164,21 +196,44 @@ div.testimonial-content img{
     border-radius: 50%;
     background-color: var(--green);
 }
+@media screen and (max-width: 700px){
+    div.testimonial-content img{
+    height: 34%;
+    width: 86%;
+    }
+    div.testimonial-content{
+    grid-template-columns: 70px 1fr;
+    gap: 10px;
+    }
+    .profile-image .circle{
+    height: 65px;
+    width: 65px;
+    top: -6px;
+    left: -4px;
+    }
+    div.testimonial-content p{
+        font-size: 0.6rem;
+        line-height: 20px;
+    }
+}
 .testimonials-columns{
     display: grid;
     grid-template-columns: 1fr 40px;
     gap: 40px;
 } 
+
 .testimonial-contents{
     height: 280px;
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
+
 .testimonial-content{ 
     padding: 50px 0;
     scroll-snap-align: start;
 }
+
 .testimonial-link a img{
     display: block;
     border-radius: 50%;
@@ -217,6 +272,23 @@ div.download div.shadow-text{
     position: absolute;
     z-index: -1;
     top: 100px;
+    left: 280px;
+}
+@media screen and (max-width: 700px){
+    div.download h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    div.download div.shadow-text{
+        font-size: 4rem;
+        left: 40px;
+        top: -40px;
+        letter-spacing: 0.02rem;
+        overflow-x: hidden;
+    }
+    .two-columns.dp{
+        grid-template-columns: 1fr;
+    }
 }
 a.download{
     margin-top: 20px;
@@ -238,4 +310,93 @@ a.download img{
 .download.app img{
     top: -11px;
     left: -12px;
+}
+footer{
+    color: #fff;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+}
+@media screen and (max-width: 700px){
+    footer p{
+        font-size: .9rem;
+    }
+}
+footer svg{
+    display: block;
+}
+.footer-content{
+    position: relative;
+    background-color: var(--green);
+    padding: 20px;
+    top: -1px;
+}
+footer a.logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+    left: 80px;
+    position: relative;
+    margin: 0 auto;
+}
+footer a.logo img{
+    position: absolute;
+    width: 150px;
+    left: -120px;
+    top: -70px;
+}
+footer form{
+    margin-top: 20px;
+    background-color: #609372;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+footer form input{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    min-width: 200px;
+    padding: 10px;
+}
+footer form input::placeholder{
+    color: #fff;
+}
+footer button{
+    background-color: #fff;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--green);
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.columns{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 200px 200px; 
+}
+.columns img{
+    position: relative;
+    padding-bottom: 50px;
+    top: -50px;
+}
+.columns h3{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.columns p{
+    color: rgba(255, 255, 255, 0.5);
+}
+.columns a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    line-height: 2rem;
+    font-size: 0.8rem;
 }
