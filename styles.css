@@ -133,6 +133,10 @@ div.intro img{
     border-top-left-radius: 220px;
     border-bottom-right-radius: 900px;
     transform: rotate(-170deg);
+    overflow: hidden;
+}
+.big-img{
+    overflow: hidden;
 }
 @media screen and (max-width: 700px) {
     div.two-columns{
