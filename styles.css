@@ -75,7 +75,10 @@ header{
 }
 @media screen and (max-width:730px){
     header{
-        overflow: hidden;
+        overflow-x: hidden;
+    }
+    header img{
+        overflow-x: hidden;
     }
 }
 header a{
