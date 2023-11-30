@@ -78,7 +78,7 @@ header{
         overflow-x: hidden;
     }
     header img{
-        overflow-x: hidden;
+        overflow: hidden;
     }
 }
 header a{
@@ -98,6 +98,13 @@ header nav{
 @media screen and (max-width:730px) {
     header nav a:not(:first-child){
         color: white;
+    }
+    header nav{
+        text-align: right;
+        overflow-x: hidden;
+    }
+    header nav a{
+        font-size: 0.8rem;
     }
 }
 div.intro{
