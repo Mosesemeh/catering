@@ -143,6 +143,7 @@ div.intro img{
         height: 800px;
         right: -210px;
         transform: rotate(-190deg);
+        overflow: hidden;
     }
 }
 div.vertical-line{
