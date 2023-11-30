@@ -308,8 +308,8 @@ div.download div.shadow-text{
         font-weight: bold;
     }
     div.download div.shadow-text{
-        font-size: 4rem;
-        left: 40px;
+        font-size: 3rem;
+        left: 15px;
         top: -40px;
         letter-spacing: 0.02rem;
         overflow-x: hidden;
