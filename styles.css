@@ -138,6 +138,9 @@ div.intro img{
     div.two-columns{
         padding: 20px;
     }
+    div.two-columns img{
+        overflow: hidden;
+    }
     div.intro img{
         width: 600px;
         height: 800px;
