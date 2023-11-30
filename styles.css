@@ -34,9 +34,7 @@ p{
     p{
         font-size: 0.8rem;
     }
-    img{
-        overflow: hidden;
-    }
+    
 }
 p a{
     color: #555;
@@ -77,6 +75,7 @@ div.center{
 header{
     padding: 20px 0;
     position: relative;
+    overflow: hidden;
 }
 @media screen and (max-width:730px){
     header{
@@ -138,7 +137,6 @@ div.intro img{
     border-top-left-radius: 220px;
     border-bottom-right-radius: 900px;
     transform: rotate(-170deg);
-    overflow: hidden;
 }
 .big-img{
     overflow: hidden;
@@ -147,9 +145,7 @@ div.intro img{
     div.two-columns{
         padding: 20px;
     }
-    div.two-columns img{
-        overflow: hidden;
-    }
+    
     .big-img{
         overflow: hidden;
     }
