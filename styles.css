@@ -411,7 +411,7 @@ footer form input{
     background-color: transparent;
     border: 0;
     color: #fff;
-    min-width: 170px;
+    min-width: 180px;
     padding: 10px;
 }
 footer form input::placeholder{
